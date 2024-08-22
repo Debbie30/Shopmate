@@ -21,7 +21,7 @@ function Header() {
     const auth = async () => {
         if (user) {
             try {
-                await axios.post('http://127.0.0.1:5555//login');
+                await axios.post('https://shopmate-sbxu.onrender.com/');
                 dispatch({
                     type: 'SET_USER',
                     user: null,

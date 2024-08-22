@@ -38,7 +38,7 @@ function SectionBelowHeader() {
   }, [images.length]);
 
   useEffect(() => {
-    fetch('https://localhost:5555/products')
+    fetch('https://shopmate-sbxu.onrender.com/')
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);

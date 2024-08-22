@@ -1,4 +1,4 @@
-////////const API_URL = 'https://localhost:5555';
+////////const API_URL = 'https://shopmate-sbxu.onrender.com/';
 
 export const login = async (data) => {
   const response = await fetch(`/login`, {
