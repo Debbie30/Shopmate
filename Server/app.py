@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, jwt_required, verify_jwt_in_request
 from werkzeug.security import generate_password_hash, check_password_hash
-from models import  User, Product, Wishlist, Favorite, CartItem, Order, Review, SupportRequest, Category, db
+from .models import  User, Product, Wishlist, Favorite, CartItem, Order, Review, SupportRequest, Category, db
 import logging
 from datetime import datetime
 from functools import wraps
