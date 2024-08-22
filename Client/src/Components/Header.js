@@ -89,6 +89,12 @@ function Header() {
                             <Link to="/saveditems">
                                 <div className="px-4 py-2 text-sm hover:bg-gray-100">Saved Items</div>
                             </Link>
+                            {/* Add Admin link here */}
+                            {user?.isAdmin && (
+                                <Link to="/admin">
+                                    <div className="px-4 py-2 text-sm hover:bg-gray-100">Admin</div>
+                                </Link>
+                            )}
                         </div>
                     )}
                 </div>
