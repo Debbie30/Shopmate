@@ -50,6 +50,12 @@ login.login_view = 'login'
 app.logger.setLevel(logging.DEBUG)
 
 
+@app.route('/')
+def index():
+    return "Welcome to ShopMate!"
+
+
+
 # Create a file handler
 handler = logging.FileHandler('app.log')
 handler.setLevel(logging.DEBUG)
